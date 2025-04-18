@@ -10,7 +10,7 @@
   "author": "Arpan Neupane",
   "license": "ISC",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
     "@supabase/supabase-js": "^2.49.4"
   }
 }
