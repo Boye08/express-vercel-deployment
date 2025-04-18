@@ -21,7 +21,7 @@ app.get('/v1/auth', async (req, res) => {
 
     try {
         const { data, error} = await superbase.from('tokens-licnses').select('*').eq('ip', ip).eq('token', token).eq('resource', type)
-        if (data) {
+            if (data.length > 0) {
                 res.status(200).send('License is valid')
             } else {
                 res.status(404).send('License not found')
